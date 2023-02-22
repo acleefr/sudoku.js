@@ -1,0 +1,31 @@
+/*make the table with thick border*/
+.table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+/*make the cases of the table with thick border*/
+.subrow {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.subcell {
+  /*50x50px*/
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+.row {
+    text-align: center;
+}
+
+body {
+  font-size: 40px;
+}
