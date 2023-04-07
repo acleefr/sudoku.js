@@ -9,7 +9,7 @@ a = [int(i) for i in a]
 error = "Error: There are duplicates in the same row"
 error2 = "Error: There are duplicates in the same column"
 
-if a[0] == a[1] or a[0] == a[2] or a[0] == a[3] or a[1] == a[2] or a[1] == a[3] or a[2] == a[3]:
+if a[0] == a[1] or a[0] == a[2] or a[0] == a[3] or a[1] == a[2] or a[1] == a[3] or a[2] == a[3] or a[0] > 4:
   print(error)
 else:
   if a[4] == a[5] or a[4] == a[6] or a[4] == a[7] or a[5] == a[6] or a[5] == a[7] or a[6] == a[7]:
@@ -33,7 +33,10 @@ else:
               if a[3] == a[7] or a[3] == a[11] or a[3] == a[15] or a[7] == a[11] or a[7] == a[15] or a[11] == a[15]:
                 print(error2)
               else:
-                print("No errors found")
+                if a[1] > 4 or a[2] > 4 or a[3] > 4 or a[4] > 4 or a[5] > 4 or a[6] > 4 or a[7] > 4 or a[8] > 4 or a[9] > 4 or a[10] > 4 or a[11] > 4 or a[12] > 4 or a[13] > 4 or a[14] > 4 or a[15] > 4 or a[0]<0 or a[1]<0 or a[2]<0 or a[3]<0 or a[4]<0 or a[5]<0 or a[6]<0 or a[7]<0 or a[8]<0 or a[9]<0 or a[10]<0 or a[11]<0 or a[12]<0 or a[13]<0 or a[14]<0 or a[15]<0:
+                  print("Error: Numbers must be between 1 and 4")
+                else:
+                  print("No errors found")
 
 print (a[0], a[1], a[2], a[3])
 print (a[4], a[5], a[6], a[7])

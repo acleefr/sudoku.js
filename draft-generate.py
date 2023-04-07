@@ -42,6 +42,9 @@ a[random.randint(0, 15)] = "x"
 a[random.randint(0, 15)] = "x"
 
 # print the array
+print(a)
+
+# print the array
 print(a[0], a[1], a[2], a[3])
 print(a[4], a[5], a[6], a[7])
 print(a[8], a[9], a[10], a[11])
